@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja pierwsza strona</title>
+    <link rel="stylesheet" type="text/css" href="style_nowe.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="NAGLOWEK">
+    <h1 class="center">Witaj na mojej stronie.</h1>
+</div>
+
+<div id="MENU">
+    <a href="#tabela">Tabela</a> <br>
+    <a href="#formularz">Formularz</a> <br>
+    <a href="#zdjecie">Zdjecie</a> <br>
+</div>
+
+<div id="TRESC">
+    <a name="tabela"></a>
+    <table border="3">
+        <tr>
+            <td>Nazwa potrawy</td>
+            <td>Czas przygotowania</td>
+            <td>Trudność przygotowania</td>
+        </tr>
+        <tr>
+            <td>Kurczak w sezamie</td>
+            <td>15 minut</td>
+            <td>Średnia</td>
+        </tr>
+        <tr>
+            <td>Sałatka grecka</td>
+            <td>20 minut</td>
+            <td>Łatwa</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <a name="formularz"></a>
+    <form action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain">
+        <div>
+        <!-- Podstawowe pole tekstowe -->
+        <input name="Potrawa" />Podaj nazwę potrawy<br />
+        <input name="Kraj" />Podaj kraj pochodzenia potrawy
+        <!-- Pole typu RADIO -->
+        <p>Trudność przygotowania</p>
+        <input type="radio" name="Trudność" value="Łatwa" />Łatwa
+        <input type="radio" name="Trudność" value="Średnia" />Średnia
+            <input type="radio" name="Trudność" value="Trudna" />Trudna
+
+        <!-- Pole typu RADIO -->
+        <p>Czas przygotowania</p>
+        <input type="radio" name="Czas" value="mniej niż 15" />mniej niż 15<br />
+        <input type="radio" name="Czas" value="15-25" />15-25<br />
+        <input type="radio" name="Czas" value="25-40" />25-40<br />
+        <input type="radio" name="Czas" value="40-60" />40-60<br />
+        <input type="radio" name="Czas" value="więcej niż 60" />więcej niż 60
+        <!-- Pole typu CHECKBOX -->
+        <p>Jakich składników potrzebujesz?</p>
+        <input type="checkbox" name="Składnik" value="filet z kurczaka" />filet z kurczaka<br />
+        <input type="checkbox" name="Składnik" value="makaron " />makaron<br />
+        <input type="checkbox" name="Składnik" value="sezam" />sezam<br />
+        <input type="checkbox" name="Składnik" value="pieprz" />pieprz<br />
+        <input type="checkbox" name="Składnik" value="marchewka" />marchewka<br />
+        <input type="checkbox" name="Składnik" value="Inna" />Inna (podaj jaka):
+        <input name="Składnik" />
+        <!-- Lista rozwijalna (typ podstawowy) z zaznaczoną opcją domyślną -->
+        <p>Jakiego rodzaju kuchnię lubisz najbardziej?</p>
+        <select name="Typ potrawy">
+            <option selected="selected">Wegeteriańska</option>
+            <option>Sródziemnomorska</option>
+            <option>Chińska</option>
+            <option>Meksykańska</option>
+            <option>Inna</option>
+        </select>
+        <!-- Pole komentarza (o powiększonych rozmiarach oraz z tekstem domyślnym) -->
+        <p>Podaj przepis na swoje ulubione danie:</p>
+        <textarea name="Komentarz" cols="50" rows="10">Proszę, wpisz tutaj swój przepis...</textarea>
+        <br /><br /><br />
+        <!-- Przycisk WYŚLIJ -->
+        <input type="submit" value="Wyślij formularz" />
+        <!-- Przycisk WYCZYŚĆ DANE -->
+        <input type="reset" value="Wyczyść dane" />
+    </div></form>
+    <br>
+    <a name="zdjecie"></a>
+    <img src="kurczak.jpg" alt="kurczak po tajsku" width="600" height="380"/>
+</div>
+
+<div id="STOPKA">
+    <h2>Do zobaczenia.</h2>
+</div>
+
+</body>
+</html>
